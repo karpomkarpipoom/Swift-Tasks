@@ -1,0 +1,6 @@
+framework module Pods_basic_webservice {
+  umbrella header "Pods-basic-webservice-umbrella.h"
+
+  export *
+  module * { export * }
+}

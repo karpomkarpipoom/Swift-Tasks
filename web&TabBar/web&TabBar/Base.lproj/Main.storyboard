@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hKK-BZ-Dsr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Twitter-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TwitterVC" customModule="web_TabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZ4-ep-FJ8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50269206531915278" green="0.89145912446255038" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="xZ4-ep-FJ8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="50S-VG-1oq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xZ4-ep-FJ8" secondAttribute="trailing" id="8Sq-hj-naW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xZ4-ep-FJ8" secondAttribute="bottom" id="9bM-LP-wdu"/>
+                            <constraint firstItem="xZ4-ep-FJ8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EMm-7h-XyR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Twitter" image="twitter" id="XD9-Cm-FvQ"/>
+                    <connections>
+                        <outlet property="webview" destination="xZ4-ep-FJ8" id="rV6-Hb-bKM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1487" y="743"/>
+        </scene>
+        <!--Youtube-->
+        <scene sceneID="fPV-8R-dr7">
+            <objects>
+                <viewController storyboardIdentifier="YoutubeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OE8-On-qSA" customClass="YoutubeVC" customModule="web_TabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JPa-oG-A5r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CxW-eF-bkJ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93547958239999995" green="0.2400773591" blue="0.1033837754" alpha="0.9140625" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CxW-eF-bkJ" secondAttribute="trailing" id="Ac7-uI-5hy"/>
+                            <constraint firstItem="CxW-eF-bkJ" firstAttribute="top" secondItem="k0p-wX-ZE8" secondAttribute="top" id="Kgm-Ua-Pb1"/>
+                            <constraint firstAttribute="bottom" secondItem="CxW-eF-bkJ" secondAttribute="bottom" id="ZWW-CE-aC6"/>
+                            <constraint firstItem="CxW-eF-bkJ" firstAttribute="leading" secondItem="k0p-wX-ZE8" secondAttribute="leading" id="kxZ-f3-JME"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k0p-wX-ZE8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Youtube" image="youtube" id="ujQ-E0-qVt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CeH-1P-JMw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2242" y="-609"/>
+        </scene>
+        <!--Linked In-->
+        <scene sceneID="KaO-bS-ezA">
+            <objects>
+                <viewController storyboardIdentifier="LinkVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N8x-LU-Uv3" customClass="LinkVC" customModule="web_TabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YpJ-HO-bTo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Swf-j9-psE">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.062883919619556528" green="1" blue="0.88480099589448213" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Swf-j9-psE" secondAttribute="trailing" id="NMq-4S-J2C"/>
+                            <constraint firstItem="Swf-j9-psE" firstAttribute="top" secondItem="Ww1-IN-5Ti" secondAttribute="top" id="RZC-uH-sRk"/>
+                            <constraint firstAttribute="bottom" secondItem="Swf-j9-psE" secondAttribute="bottom" id="gHC-Mz-Vt8"/>
+                            <constraint firstItem="Swf-j9-psE" firstAttribute="leading" secondItem="Ww1-IN-5Ti" secondAttribute="leading" id="n4o-Mn-gXU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ww1-IN-5Ti"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Linked In" image="linkedin" id="6P7-Xc-dB8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMN-O5-WzJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="721" y="-1246"/>
+        </scene>
+        <!--github-->
+        <scene sceneID="oss-oF-qgV">
+            <objects>
+                <viewController storyboardIdentifier="GitVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r0x-0c-Vu5" customClass="GitVC" customModule="web_TabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Owe-Af-tbm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgE-ib-P5T">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.54307332741752123" green="0.57281290450728917" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="mlH-Nd-DuT" firstAttribute="trailing" secondItem="wgE-ib-P5T" secondAttribute="trailing" id="5xD-NN-xY3"/>
+                            <constraint firstAttribute="bottom" secondItem="wgE-ib-P5T" secondAttribute="bottom" id="Kom-AS-XoK"/>
+                            <constraint firstItem="wgE-ib-P5T" firstAttribute="top" secondItem="mlH-Nd-DuT" secondAttribute="top" id="Qi4-oP-OvJ"/>
+                            <constraint firstItem="wgE-ib-P5T" firstAttribute="leading" secondItem="Owe-Af-tbm" secondAttribute="leading" id="XZu-p8-TWf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mlH-Nd-DuT"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="github" image="git" id="Q7R-KC-yiQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Glf-02-4s6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2242" y="51"/>
+        </scene>
+        <!--DropBox-->
+        <scene sceneID="Cmt-zv-G6K">
+            <objects>
+                <viewController storyboardIdentifier="DropVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mhx-27-thC" customClass="DropVC" customModule="web_TabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T1h-wh-PFy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WM6-i8-GyB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WM6-i8-GyB" firstAttribute="leading" secondItem="T1h-wh-PFy" secondAttribute="leading" id="0iF-ab-2ag"/>
+                            <constraint firstItem="Mea-Wf-98Z" firstAttribute="trailing" secondItem="WM6-i8-GyB" secondAttribute="trailing" id="V90-V9-rkT"/>
+                            <constraint firstItem="WM6-i8-GyB" firstAttribute="top" secondItem="T1h-wh-PFy" secondAttribute="top" id="g5I-XU-KKn"/>
+                            <constraint firstItem="Mea-Wf-98Z" firstAttribute="bottom" secondItem="WM6-i8-GyB" secondAttribute="bottom" id="wyl-BU-7ca"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mea-Wf-98Z"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="DropBox" image="dropbox" id="xe1-IC-92B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jBi-Mb-R4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2383" y="743"/>
+        </scene>
+        <!--google-->
+        <scene sceneID="FXl-rO-hqa">
+            <objects>
+                <viewController id="oKt-f3-u2J" customClass="googleVC" customModule="web_TabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9XV-1b-pM6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJk-Ij-CHg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80366259859512335" blue="0.27444166289746796" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="fJk-Ij-CHg" firstAttribute="leading" secondItem="dQV-Qq-SYx" secondAttribute="leading" id="DeS-ZB-KYB"/>
+                            <constraint firstItem="dQV-Qq-SYx" firstAttribute="bottom" secondItem="fJk-Ij-CHg" secondAttribute="bottom" id="Hea-hb-AXe"/>
+                            <constraint firstItem="dQV-Qq-SYx" firstAttribute="trailing" secondItem="fJk-Ij-CHg" secondAttribute="trailing" id="rrp-MN-gfT"/>
+                            <constraint firstItem="fJk-Ij-CHg" firstAttribute="top" secondItem="dQV-Qq-SYx" secondAttribute="top" id="wim-Mr-3Rf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dQV-Qq-SYx"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="google" image="google" id="mkt-o2-ICt"/>
+                    <connections>
+                        <outlet property="webview" destination="fJk-Ij-CHg" id="Mc9-jb-mOd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ack-hh-k4O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="666" y="742"/>
+        </scene>
+        <!--Facebook-->
+        <scene sceneID="czK-hu-LBa">
+            <objects>
+                <viewController id="ejD-Y8-rhS" customClass="fbVC" customModule="web_TabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OiF-o0-2FY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfy-gB-5Ot">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27518733207206425" green="0.67682459216776092" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="rMA-7j-pOQ" firstAttribute="bottom" secondItem="hfy-gB-5Ot" secondAttribute="bottom" id="Dzc-U2-F1W"/>
+                            <constraint firstItem="hfy-gB-5Ot" firstAttribute="top" secondItem="OiF-o0-2FY" secondAttribute="top" id="ZFp-dI-70o"/>
+                            <constraint firstAttribute="trailing" secondItem="hfy-gB-5Ot" secondAttribute="trailing" id="eqE-lR-HuS"/>
+                            <constraint firstItem="hfy-gB-5Ot" firstAttribute="leading" secondItem="rMA-7j-pOQ" secondAttribute="leading" id="z7d-sO-47n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rMA-7j-pOQ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Facebook" image="facebook" id="xmL-QA-q2Q"/>
+                    <connections>
+                        <outlet property="webview" destination="hfy-gB-5Ot" id="rNx-z8-Kqt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zSv-nw-JGi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-166" y="742"/>
+        </scene>
+        <!--pinterest-->
+        <scene sceneID="wnY-lQ-Wrt">
+            <objects>
+                <viewController storyboardIdentifier="pinVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Gk-ay-las" customClass="pinVC" customModule="web_TabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PrX-ru-jey">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IeV-yk-bEA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IeV-yk-bEA" firstAttribute="leading" secondItem="Tuw-6S-KLO" secondAttribute="leading" id="Fhj-ET-fO9"/>
+                            <constraint firstAttribute="trailing" secondItem="IeV-yk-bEA" secondAttribute="trailing" id="bhx-6T-ZHa"/>
+                            <constraint firstItem="Tuw-6S-KLO" firstAttribute="bottom" secondItem="IeV-yk-bEA" secondAttribute="bottom" id="ofu-TY-RrM"/>
+                            <constraint firstItem="IeV-yk-bEA" firstAttribute="top" secondItem="PrX-ru-jey" secondAttribute="top" id="zGT-yW-JKM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tuw-6S-KLO"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="pinterest" image="pint" id="9gu-BC-bpp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oRO-YS-vjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-466" y="-670"/>
+        </scene>
+        <!--Blogger-->
+        <scene sceneID="l9k-Ux-NhA">
+            <objects>
+                <viewController storyboardIdentifier="blogVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="j9J-7a-Mt5" customClass="blogVC" customModule="web_TabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mon-N1-wda">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ksb-70-gf1">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99802875537221103" green="1" blue="0.58691420646398385" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ksb-70-gf1" firstAttribute="leading" secondItem="5Wc-Av-dg1" secondAttribute="leading" id="9Gi-hO-e9Y"/>
+                            <constraint firstAttribute="trailing" secondItem="ksb-70-gf1" secondAttribute="trailing" id="Enw-V7-8cI"/>
+                            <constraint firstItem="ksb-70-gf1" firstAttribute="top" secondItem="5Wc-Av-dg1" secondAttribute="top" id="pAm-zF-2q4"/>
+                            <constraint firstAttribute="bottom" secondItem="ksb-70-gf1" secondAttribute="bottom" id="wjf-ut-AmE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Wc-Av-dg1"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Blogger" image="blog" id="6rr-ix-I5i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ePU-dj-L0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-503" y="83"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="AXX-Hf-3vo">
+            <objects>
+                <tabBarController id="hKK-BZ-Dsr" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iq3-31-Q8Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ejD-Y8-rhS" kind="relationship" relationship="viewControllers" id="i3j-zD-hct"/>
+                        <segue destination="oKt-f3-u2J" kind="relationship" relationship="viewControllers" id="pyV-oH-LOR"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="r0F-Sw-fhM"/>
+                        <segue destination="N8x-LU-Uv3" kind="relationship" relationship="viewControllers" id="jEh-V9-Y1o"/>
+                        <segue destination="r0x-0c-Vu5" kind="relationship" relationship="viewControllers" id="4qs-CC-IuG"/>
+                        <segue destination="Mhx-27-thC" kind="relationship" relationship="viewControllers" id="syX-Ed-837"/>
+                        <segue destination="j9J-7a-Mt5" kind="relationship" relationship="viewControllers" id="kIY-eU-0mY"/>
+                        <segue destination="OE8-On-qSA" kind="relationship" relationship="viewControllers" id="7gs-UQ-F0u"/>
+                        <segue destination="8Gk-ay-las" kind="relationship" relationship="viewControllers" id="yhw-p4-Tmz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1MR-PT-tap" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="-430"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blog" width="16" height="16"/>
+        <image name="dropbox" width="32" height="32"/>
+        <image name="facebook" width="32" height="32"/>
+        <image name="git" width="32" height="32"/>
+        <image name="google" width="32" height="32"/>
+        <image name="linkedin" width="32" height="32"/>
+        <image name="pint" width="32" height="32"/>
+        <image name="twitter" width="32" height="32"/>
+        <image name="youtube" width="32" height="32"/>
+    </resources>
+</document>

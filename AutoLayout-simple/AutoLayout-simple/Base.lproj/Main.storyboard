@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout_simple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aOK-7J-Tjx">
+                                <rect key="frame" x="37" y="311" width="300" height="45"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JKA-L0-Li0">
+                                <rect key="frame" x="37" y="248" width="300" height="45"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZQ-QF-fRp">
+                                <rect key="frame" x="37" y="373" width="300" height="45"/>
+                                <color key="backgroundColor" red="0.39848738909999998" green="0.18368241190000001" blue="0.55990713830000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nZQ-QF-fRp" firstAttribute="height" secondItem="aOK-7J-Tjx" secondAttribute="height" id="3GC-hD-yqJ"/>
+                            <constraint firstItem="aOK-7J-Tjx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="300:375" id="7S6-yW-jYG"/>
+                            <constraint firstItem="nZQ-QF-fRp" firstAttribute="width" secondItem="aOK-7J-Tjx" secondAttribute="width" id="J7G-wp-zI7"/>
+                            <constraint firstItem="nZQ-QF-fRp" firstAttribute="top" secondItem="aOK-7J-Tjx" secondAttribute="bottom" constant="17" id="JC4-yR-0hP"/>
+                            <constraint firstItem="JKA-L0-Li0" firstAttribute="width" secondItem="aOK-7J-Tjx" secondAttribute="width" id="Qtb-tJ-rul"/>
+                            <constraint firstItem="nZQ-QF-fRp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RSd-BH-qOJ"/>
+                            <constraint firstItem="aOK-7J-Tjx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UGT-u1-Eo7"/>
+                            <constraint firstItem="JKA-L0-Li0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bel-b4-0eV"/>
+                            <constraint firstItem="aOK-7J-Tjx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="n3F-mA-QC1"/>
+                            <constraint firstItem="aOK-7J-Tjx" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="45:667" id="r4k-M4-EyE"/>
+                            <constraint firstItem="JKA-L0-Li0" firstAttribute="height" secondItem="aOK-7J-Tjx" secondAttribute="height" id="wBu-CJ-5ta"/>
+                            <constraint firstItem="aOK-7J-Tjx" firstAttribute="top" secondItem="JKA-L0-Li0" secondAttribute="bottom" constant="18" id="wZM-aO-J1D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="17G-X6-z9r">
+            <objects>
+                <viewController id="yhr-Wa-5Ub" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UwE-BN-ira">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOR-k8-Lrg">
+                                <rect key="frame" x="330" y="496" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogv-Wt-kdY">
+                                <rect key="frame" x="209" y="450" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VYZ-sH-Oge"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZP-Ie-KJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1397.5999999999999" y="295.50224887556226"/>
+        </scene>
+    </scenes>
+</document>
