@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NoG-2f-gcd">
-                                <rect key="frame" x="163" y="297.5" width="49" height="72"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NoG-2f-gcd">
+                                <rect key="frame" x="128.5" y="633" width="118" height="26"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raA-Vi-j72">
                                         <rect key="frame" x="0.0" y="0.0" width="49" height="26"/>
@@ -28,24 +28,35 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kB-Wz-3cr">
-                                        <rect key="frame" x="0.0" y="46" width="49" height="26"/>
+                                        <rect key="frame" x="69" y="0.0" width="49" height="26"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fjt-PR-F4n">
+                                <rect key="frame" x="0.0" y="20" width="375" height="605"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="mbH-ps-7i1"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NoG-2f-gcd" secondAttribute="bottom" constant="8" id="7bz-yl-8Iq"/>
+                            <constraint firstItem="fjt-PR-F4n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MQ1-9o-GJ7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fjt-PR-F4n" secondAttribute="trailing" id="XNV-hl-5Yb"/>
+                            <constraint firstItem="NoG-2f-gcd" firstAttribute="top" secondItem="fjt-PR-F4n" secondAttribute="bottom" constant="8" id="aap-Xh-oa1"/>
+                            <constraint firstItem="fjt-PR-F4n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="foW-ad-XyH"/>
                             <constraint firstItem="NoG-2f-gcd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iW5-e3-zU2"/>
-                            <constraint firstItem="NoG-2f-gcd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="w3N-mF-5oC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="latValue" destination="raA-Vi-j72" id="QXO-rU-W6N"/>
                         <outlet property="longValue" destination="5kB-Wz-3cr" id="sje-1b-bUP"/>
+                        <outlet property="mapView" destination="fjt-PR-F4n" id="VMr-Y9-UcY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
