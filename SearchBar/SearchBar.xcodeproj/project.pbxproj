@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D127F4122E012B30005FDD3 /* UISearchControlerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D127F4022E012B30005FDD3 /* UISearchControlerVC.swift */; };
 		1D127F4322E01B470005FDD3 /* CustomSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D127F4222E01B470005FDD3 /* CustomSearchVC.swift */; };
+		1D60606622E600E30075EA69 /* search icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D60606522E600E30075EA69 /* search icon@3x.png */; };
 		1DC1A47822DD6CC7009B0F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC1A47722DD6CC7009B0F42 /* AppDelegate.swift */; };
 		1DC1A47A22DD6CC7009B0F42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC1A47922DD6CC7009B0F42 /* ViewController.swift */; };
 		1DC1A47D22DD6CC7009B0F42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DC1A47B22DD6CC7009B0F42 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		1D127F4022E012B30005FDD3 /* UISearchControlerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchControlerVC.swift; sourceTree = "<group>"; };
 		1D127F4222E01B470005FDD3 /* CustomSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchVC.swift; sourceTree = "<group>"; };
+		1D60606522E600E30075EA69 /* search icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search icon@3x.png"; sourceTree = "<group>"; };
 		1DC1A47422DD6CC7009B0F42 /* SearchBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DC1A47722DD6CC7009B0F42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DC1A47922DD6CC7009B0F42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				1D127F4022E012B30005FDD3 /* UISearchControlerVC.swift */,
 				1D127F4222E01B470005FDD3 /* CustomSearchVC.swift */,
 				1DC1A47B22DD6CC7009B0F42 /* Main.storyboard */,
+				1D60606522E600E30075EA69 /* search icon@3x.png */,
 				1DC1A47E22DD6CCE009B0F42 /* Assets.xcassets */,
 				1DC1A48022DD6CCE009B0F42 /* LaunchScreen.storyboard */,
 				1DC1A48322DD6CCE009B0F42 /* Info.plist */,
@@ -131,6 +134,7 @@
 				1DC1A48222DD6CCE009B0F42 /* LaunchScreen.storyboard in Resources */,
 				1DC1A47F22DD6CCE009B0F42 /* Assets.xcassets in Resources */,
 				1DC1A47D22DD6CC7009B0F42 /* Main.storyboard in Resources */,
+				1D60606622E600E30075EA69 /* search icon@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

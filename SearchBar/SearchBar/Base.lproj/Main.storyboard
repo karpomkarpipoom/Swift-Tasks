@@ -54,6 +54,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRc-MK-oHy">
                                         <rect key="frame" x="0.0" y="134" width="133" height="30"/>
                                         <state key="normal" title="Custom Search Bar"/>
+                                        <connections>
+                                            <segue destination="tnr-C5-ayd" kind="show" id="MD6-L1-ldO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -70,6 +73,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3Q-Wc-fJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-383" y="117"/>
+        </scene>
+        <!--Custom SearchVC-->
+        <scene sceneID="zJN-PU-796">
+            <objects>
+                <viewController storyboardIdentifier="CustomSearchVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tnr-C5-ayd" customClass="CustomSearchVC" customModule="SearchBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hhM-eO-EgL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Frm-Ci-eYR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="75"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iyg-xH-zYd">
+                                        <rect key="frame" x="48" y="5" width="319" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="c3U-pt-5Yi"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="SearchTextField:" destination="rFT-Ch-0Oh" eventType="editingDidEnd" id="Iqs-5b-HWs"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="smz-Ck-0B9">
+                                        <rect key="frame" x="16" y="29.5" width="16" height="16"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97637790441513062" green="0.97653752565383911" blue="0.97634392976760864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="smz-Ck-0B9" firstAttribute="leading" secondItem="Frm-Ci-eYR" secondAttribute="leading" constant="16" id="18I-Km-ShC"/>
+                                    <constraint firstItem="iyg-xH-zYd" firstAttribute="leading" secondItem="smz-Ck-0B9" secondAttribute="trailing" constant="16" id="3MN-W5-Ooq"/>
+                                    <constraint firstItem="iyg-xH-zYd" firstAttribute="centerY" secondItem="Frm-Ci-eYR" secondAttribute="centerY" id="QQv-Ad-lIL"/>
+                                    <constraint firstAttribute="trailing" secondItem="iyg-xH-zYd" secondAttribute="trailing" constant="8" id="Raw-Me-2kL"/>
+                                    <constraint firstItem="smz-Ck-0B9" firstAttribute="centerY" secondItem="Frm-Ci-eYR" secondAttribute="centerY" id="dS8-CO-ns6"/>
+                                    <constraint firstAttribute="height" constant="75" id="mOb-Wx-dCs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Frm-Ci-eYR" firstAttribute="width" secondItem="hhM-eO-EgL" secondAttribute="width" id="RkH-tb-yDo"/>
+                            <constraint firstItem="Frm-Ci-eYR" firstAttribute="top" secondItem="2fY-Ih-cSq" secondAttribute="top" id="p1Z-pb-x4i"/>
+                            <constraint firstItem="Frm-Ci-eYR" firstAttribute="centerX" secondItem="hhM-eO-EgL" secondAttribute="centerX" id="vBf-Wa-KxI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2fY-Ih-cSq"/>
+                    </view>
+                    <connections>
+                        <outlet property="SearchTextField" destination="iyg-xH-zYd" id="7KS-cu-tXk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Vc-EF-5Rs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rFT-Ch-0Oh" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-383.19999999999999" y="834.33283358320841"/>
         </scene>
         <!--Search ControlerVC-->
         <scene sceneID="nUq-U5-pym">
@@ -172,4 +230,7 @@
             <point key="canvasLocation" x="449" y="-223"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="search icon.png" width="16" height="16"/>
+    </resources>
 </document>
