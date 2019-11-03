@@ -1,0 +1,37 @@
+{
+    status : true,
+    statusCode : 200,
+    data : [
+    {
+        countryName : "India",
+        countryIso  : "IN"
+        countryCode : 91
+        states      : [
+            {
+                name : "Tamil Nadu"
+                iso  : "IN-TN"
+            },
+            {
+                name : "Kerala"
+                iso  : "IN-KL"
+            }]
+    },
+    {
+        countryName : "Pakistan",
+        countryIso  : "PAK"
+        countryCode : 92
+        states      : []
+    },
+    {
+        countryName : "United Kingdom",
+        countryIso  : "GBR"
+        countryCode : 44
+        states      : []
+    },
+    {
+        countryName : "South Korea",
+        countryIso  : "KOR"
+        countryCode : 82
+        states      : []
+    }]
+}

@@ -14,6 +14,8 @@
 		1D59593222FFDA4F00BDC8FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D59593022FFDA4F00BDC8FE /* LaunchScreen.storyboard */; };
 		1D59593A22FFDCA900BDC8FE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59593922FFDCA900BDC8FE /* Model.swift */; };
 		1D59593C22FFDCD100BDC8FE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59593B22FFDCD100BDC8FE /* ViewModel.swift */; };
+		1D7D9A57230CD0C700018904 /* JSONModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D7D9A56230CD0C700018904 /* JSONModel.strings */; };
+		1D7D9A59230CD56700018904 /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D9A58230CD56700018904 /* JSONModel.swift */; };
 		5BBFF123BC0362F538B422BF /* Pods_MVVM_WebAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7793C1C37BB49DE755E55C /* Pods_MVVM_WebAccess.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		1D59593322FFDA4F00BDC8FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D59593922FFDCA900BDC8FE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		1D59593B22FFDCD100BDC8FE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1D7D9A56230CD0C700018904 /* JSONModel.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = JSONModel.strings; sourceTree = "<group>"; };
+		1D7D9A58230CD56700018904 /* JSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModel.swift; sourceTree = "<group>"; };
 		5E7793C1C37BB49DE755E55C /* Pods_MVVM_WebAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_WebAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28B35862DC4FBB9143C0C3C /* Pods-MVVM-WebAccess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-WebAccess.release.xcconfig"; path = "Target Support Files/Pods-MVVM-WebAccess/Pods-MVVM-WebAccess.release.xcconfig"; sourceTree = "<group>"; };
 		B5B234E70F47BF19D0BD16B2 /* Pods-MVVM-WebAccess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-WebAccess.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-WebAccess/Pods-MVVM-WebAccess.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 				1D59592722FFDA4900BDC8FE /* AppDelegate.swift */,
 				1D59593D22FFDCDA00BDC8FE /* Post */,
 				1D59592B22FFDA4900BDC8FE /* Main.storyboard */,
+				1D7D9A56230CD0C700018904 /* JSONModel.strings */,
+				1D7D9A58230CD56700018904 /* JSONModel.swift */,
 				1D59592E22FFDA4F00BDC8FE /* Assets.xcassets */,
 				1D59593022FFDA4F00BDC8FE /* LaunchScreen.storyboard */,
 				1D59593322FFDA4F00BDC8FE /* Info.plist */,
@@ -162,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7D9A57230CD0C700018904 /* JSONModel.strings in Resources */,
 				1D59593222FFDA4F00BDC8FE /* LaunchScreen.storyboard in Resources */,
 				1D59592F22FFDA4F00BDC8FE /* Assets.xcassets in Resources */,
 				1D59592D22FFDA4900BDC8FE /* Main.storyboard in Resources */,
@@ -226,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7D9A59230CD56700018904 /* JSONModel.swift in Sources */,
 				1D59593A22FFDCA900BDC8FE /* Model.swift in Sources */,
 				1D59592A22FFDA4900BDC8FE /* ViewController.swift in Sources */,
 				1D59593C22FFDCD100BDC8FE /* ViewModel.swift in Sources */,
