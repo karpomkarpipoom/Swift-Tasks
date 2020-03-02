@@ -10,16 +10,16 @@ import Foundation
 
 class EditModel {
     
-    var name        : String?
-    var ageOfDate   : Int?
-    var ageOfMonth  : Int?
-    var ageOfYear   : Int?
+    var name : String?
+    var ageOfDate : Int?
+    var ageOfMonth : Int?
+    var ageOfYear : Int?
 
     
     init(name : String, date : Int, Month : Int, Year : Int) {
-        self.name = name
+        self.name      = name
+        self.ageOfYear = Year
         self.ageOfDate = date
         self.ageOfMonth = Month
-        self.ageOfYear = Year
     }
 }
