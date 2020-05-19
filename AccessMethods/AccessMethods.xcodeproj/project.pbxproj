@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		1DAA1640240ECAA900D53867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA163F240ECAA900D53867 /* AppDelegate.swift */; };
 		1DAA1642240ECAA900D53867 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA1641240ECAA900D53867 /* SceneDelegate.swift */; };
-		1DAA1644240ECAA900D53867 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA1643240ECAA900D53867 /* ViewController.swift */; };
 		1DAA1647240ECAA900D53867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DAA1645240ECAA900D53867 /* Main.storyboard */; };
 		1DAA1649240ECAB800D53867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAA1648240ECAB800D53867 /* Assets.xcassets */; };
 		1DAA164C240ECAB800D53867 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DAA164A240ECAB800D53867 /* LaunchScreen.storyboard */; };
+		1DAA1654240ECAF300D53867 /* CameraAndGallaryAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA1653240ECAF300D53867 /* CameraAndGallaryAccess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1DAA163C240ECAA900D53867 /* AccessMethods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessMethods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DAA163F240ECAA900D53867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DAA1641240ECAA900D53867 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1DAA1643240ECAA900D53867 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1DAA1646240ECAA900D53867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DAA1648240ECAB800D53867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DAA164B240ECAB800D53867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DAA164D240ECAB800D53867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DAA1653240ECAF300D53867 /* CameraAndGallaryAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAndGallaryAccess.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			children = (
 				1DAA163F240ECAA900D53867 /* AppDelegate.swift */,
 				1DAA1641240ECAA900D53867 /* SceneDelegate.swift */,
-				1DAA1643240ECAA900D53867 /* ViewController.swift */,
+				1DAA1653240ECAF300D53867 /* CameraAndGallaryAccess.swift */,
 				1DAA1645240ECAA900D53867 /* Main.storyboard */,
 				1DAA1648240ECAB800D53867 /* Assets.xcassets */,
 				1DAA164A240ECAB800D53867 /* LaunchScreen.storyboard */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DAA1644240ECAA900D53867 /* ViewController.swift in Sources */,
+				1DAA1654240ECAF300D53867 /* CameraAndGallaryAccess.swift in Sources */,
 				1DAA1640240ECAA900D53867 /* AppDelegate.swift in Sources */,
 				1DAA1642240ECAA900D53867 /* SceneDelegate.swift in Sources */,
 			);

@@ -23,10 +23,12 @@ class ViewController: UIViewController {
         
         let url = "http://178.128.15.223:7070/api/account/get_seed"
         
-        Alamofire.request(url).responseJSON { (response : DataResponse<Any>) in
+        AF.request(url).responseJSON { response in
             switch(response.result){
             case .success(_):
-                if let JSONData = response.result.value{
+                if let JSONData = response.data {
+                    
+                    #error("U Must Cast the Value")
                     let values = JSONData as! [String : AnyObject]
                     
                     let valueOfData = values["data"]
@@ -36,7 +38,7 @@ class ViewController: UIViewController {
                 }
                 break
             case .failure(_):
-                print(response.result.error ?? "")
+                print(response.error ?? "")
                 break
             }
         }
@@ -50,18 +52,22 @@ class ViewController: UIViewController {
                                                 "device" : device as AnyObject,
                                                 "appversion" : appVersion as AnyObject]
         
-        Alamofire.request(url, method: .post, parameters: dictparam, encoding: JSONEncoding.default, headers: nil).responseJSON { (response : DataResponse<Any>) in
+        AF.request(url, method: .post, parameters: dictparam, encoding: JSONEncoding.default, headers: nil).responseJSON { response in
             
             switch(response.result){
             case .success(_):
-                if let JSONData = response.result.value{
+                
+                if let JSONData = response.data {
+                    
+                    #error("U Must Cast the Value")
+
                     let values = JSONData as! [String : String]
                     
                     print(values["status"])
                 }
                 break
             case .failure(_):
-                print(response.result.error ?? "")
+                print(response.error ?? "")
                 break
             }
             
